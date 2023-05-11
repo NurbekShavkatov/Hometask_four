@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(58, 43, 23);
+  }
+  .first{
+    margin: 50px 200px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: darkgreen;
+  }
+  .second{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(36, 242, 8);
+    animation-name: animateIt;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes animateIt{
+    0%
+    {
+      position: absolute;
+      left: 300px;
+    }
+    50%
+    {
+        position: absolute;
+        left: 500px;
+        transform: rotateX(90deg);   
+        transform: rotateX(90deg);
+    }
+    60%
+    {
+        position: absolute;
+        left: 500px;
+        transform: rotateX(180deg); 
+        transform: rotateX(180deg);  
+    }
+    70%
+    {
+        position: absolute;
+        left: 500px;
+        transform: rotateX(90deg);   
+    }
+    80%
+    {
+        position: absolute;
+        left: 500px;
+        transform: rotateY(90deg);   
+    }
+    90%
+    {
+        position: absolute;
+        left: 500px;
+        transform: rotateX(180deg);   
+    }
+   95%
+   {
+    position: absolute;
+    left: 500px;
+    transform: rotateX(180deg);
+    
+   }
+   
+  }
